@@ -9,31 +9,3 @@ Supported Features:
  * Trigger channel notifications or method calls for matching filters.
  * Sample based on a combinarion of time, bucket size, modulos, or percentiles.
 
-
-Maybe this should be a router?
-
-```
-
-
-// implement a filter
-type Filter interface {
-    func matcher() string
-    func 
-}
-
-config := &savor.Config{
-    filters: []savor.Filter{
-        matcher: "
-    }
-}
-
-s := savor.NewSavor(config)
-
-
-client := &http.Client{
-	CheckRedirect: redirectPolicyFunc,
-}
-
-```
-
-
